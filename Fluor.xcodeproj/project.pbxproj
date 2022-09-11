@@ -10,7 +10,6 @@
 		3F0A2A302014BA11009F9610 /* RunningAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A2A2F2014BA11009F9610 /* RunningAppsViewController.swift */; };
 		3F0A2A332014BA2D009F9610 /* RunningApps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0A2A312014BA2D009F9610 /* RunningApps.storyboard */; };
 		3F15629C23FE892A00CD0773 /* MoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15629B23FE892A00CD0773 /* MoverImageView.swift */; };
-		3F15629F23FEDD0000CD0773 /* CoreGeometry in Frameworks */ = {isa = PBXBuildFile; productRef = 3F15629E23FEDD0000CD0773 /* CoreGeometry */; };
 		3F16ECDD23E9D1AC008BC89A /* DefaultsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 3F16ECDC23E9D1AC008BC89A /* DefaultsWrapper */; };
 		3F16ECDF23EC459F008BC89A /* ResultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16ECDE23EC459F008BC89A /* ResultExtension.swift */; };
 		3F16ECE123EDDF66008BC89A /* SetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16ECE023EDDF66008BC89A /* SetExtension.swift */; };
@@ -42,7 +41,6 @@
 		3F8F93BB1EEAC9B900FCE91F /* RuleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F93BA1EEAC9B900FCE91F /* RuleCellView.swift */; };
 		3F8F93BD1EEAF1EB00FCE91F /* RuleValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F93BC1EEAF1EB00FCE91F /* RuleValueTransformer.swift */; };
 		3F9EDD2A245C7BAF0047D1AC /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EDD29245C7BAF0047D1AC /* MenuItemView.swift */; };
-		3FBE4C292222AB0200782647 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 3FBE4C282222AB0200782647 /* dsa_pub.pem */; };
 		3FC44EFA1D7F169A0065D433 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC44EF91D7F169A0065D433 /* Enums.swift */; };
 		3FC44EFC1D7F16CB0065D433 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC44EFB1D7F16CB0065D433 /* Items.swift */; };
 		3FCD16A51D79793600C57B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD16A41D79793600C57B22 /* AppDelegate.swift */; };
@@ -50,6 +48,7 @@
 		3FCD16AA1D79793600C57B22 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD16A81D79793600C57B22 /* MainMenu.xib */; };
 		3FD0AFA623C62CD400DC9533 /* FKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0AFA523C62CD400DC9533 /* FKeyManager.swift */; };
 		3FD0AFA823C8759A00DC9533 /* AppErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0AFA723C8759A00DC9533 /* AppErrorManager.swift */; };
+		3FE18A432870D389007E3EE4 /* CoreGeometry in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE18A422870D389007E3EE4 /* CoreGeometry */; };
 		3FE213291D89A6940023FAC2 /* NotificationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE213281D89A6940023FAC2 /* NotificationHelpers.swift */; };
 		3FE2A5F51E5650ED0011E544 /* MenuItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE2A5F41E5650ED0011E544 /* MenuItemsController.swift */; };
 		3FE38EA8221D90930019B889 /* ReleaseNotesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE38EA7221D90930019B889 /* ReleaseNotesWindowController.swift */; };
@@ -64,26 +63,10 @@
 		3FE7E0EA1D7CC01B00DC754D /* RulesEditorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE7E0E81D7CC01B00DC754D /* RulesEditorWindowController.swift */; };
 		3FF2410B1EDB4E0000E524CD /* SwitchMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2410A1EDB4E0000E524CD /* SwitchMethodViewController.swift */; };
 		3FF655CA20751D1600C8D2FC /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF655C820751D1600C8D2FC /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7194082E28CDBDFD00EEA71F /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBE4C202222A22200782647 /* Sparkle.framework */; };
-		7194082F28CDBE0D00EEA71F /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBE4C202222A22200782647 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C5F7E0F3EDC3906CE083A6C9 /* ApplicationWindowFocusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7E5B44A817A1ABF03D2B8 /* ApplicationWindowFocusManager.swift */; };
-		C5F7E4ED47702803DFF3527D /* ApplicationIsRunningObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7EC9CABF307FF4BC26CF1 /* ApplicationIsRunningObserver.swift */; };
-		C5F7E8D964D8CA264290B14E /* WindowFocusedObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7EA38DABB33B7CFE02A6A /* WindowFocusedObserver.swift */; };
+		C5F7EC5CD38F9BCBF01E2266 /* ApplicationIsRunningObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7EF491F22BA94BBD1BA76 /* ApplicationIsRunningObserver.swift */; };
+		C5F7EDB1AA6F2C5499891B32 /* WindowFocusedObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7ECC8E2B3E4DFEACCD854 /* WindowFocusedObserver.swift */; };
+		C5F7EEDE2DBDE701F9E9266C /* ApplicationWindowFocusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7ED2502D7A1D8C3643560 /* ApplicationWindowFocusManager.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3FBE4C252222A25200782647 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7194082F28CDBE0D00EEA71F /* Sparkle.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3DF3612324C206AD00231BF5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
@@ -129,8 +112,6 @@
 		3F8F93BA1EEAC9B900FCE91F /* RuleCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleCellView.swift; sourceTree = "<group>"; };
 		3F8F93BC1EEAF1EB00FCE91F /* RuleValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleValueTransformer.swift; sourceTree = "<group>"; };
 		3F9EDD29245C7BAF0047D1AC /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
-		3FBE4C202222A22200782647 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "../Sparkle-2.2.2/Sparkle.framework"; sourceTree = "<group>"; };
-		3FBE4C282222AB0200782647 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		3FC44EF91D7F169A0065D433 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		3FC44EFB1D7F16CB0065D433 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		3FCD16A11D79793600C57B22 /* Fluor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,9 +140,9 @@
 		3FF2410A1EDB4E0000E524CD /* SwitchMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchMethodViewController.swift; sourceTree = "<group>"; };
 		3FF655C820751D1600C8D2FC /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
 		3FF655C920751D1600C8D2FC /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
-		C5F7E5B44A817A1ABF03D2B8 /* ApplicationWindowFocusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationWindowFocusManager.swift; sourceTree = "<group>"; };
-		C5F7EA38DABB33B7CFE02A6A /* WindowFocusedObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowFocusedObserver.swift; sourceTree = "<group>"; };
-		C5F7EC9CABF307FF4BC26CF1 /* ApplicationIsRunningObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationIsRunningObserver.swift; sourceTree = "<group>"; };
+		C5F7ECC8E2B3E4DFEACCD854 /* WindowFocusedObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowFocusedObserver.swift; sourceTree = "<group>"; };
+		C5F7ED2502D7A1D8C3643560 /* ApplicationWindowFocusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationWindowFocusManager.swift; sourceTree = "<group>"; };
+		C5F7EF491F22BA94BBD1BA76 /* ApplicationIsRunningObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationIsRunningObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,10 +150,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7194082E28CDBDFD00EEA71F /* Sparkle.framework in Frameworks */,
 				3FE7B6DB245DF8450027DB39 /* SmoothOperators in Frameworks */,
+				3FE18A432870D389007E3EE4 /* CoreGeometry in Frameworks */,
 				3F16ECDD23E9D1AC008BC89A /* DefaultsWrapper in Frameworks */,
-				3F15629F23FEDD0000CD0773 /* CoreGeometry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +247,9 @@
 			children = (
 				3F84FE80200E655E00871275 /* StoryboardInstantiableProtocol.swift */,
 				3FE213281D89A6940023FAC2 /* NotificationHelpers.swift */,
-				C5F7EC9CABF307FF4BC26CF1 /* ApplicationIsRunningObserver.swift */,
-				C5F7EA38DABB33B7CFE02A6A /* WindowFocusedObserver.swift */,
-				C5F7E5B44A817A1ABF03D2B8 /* ApplicationWindowFocusManager.swift */,
+				C5F7ED2502D7A1D8C3643560 /* ApplicationWindowFocusManager.swift */,
+				C5F7EF491F22BA94BBD1BA76 /* ApplicationIsRunningObserver.swift */,
+				C5F7ECC8E2B3E4DFEACCD854 /* WindowFocusedObserver.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -288,7 +268,6 @@
 		3F7291EC2025BD1E005C9B70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3FBE4C202222A22200782647 /* Sparkle.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -326,7 +305,6 @@
 				3FE7B6CB245DC6180027DB39 /* Localizable.strings */,
 				3FCD16AB1D79793600C57B22 /* Info.plist */,
 				3F0E64141D8A8A59003243FE /* Fluor-Bridging-Header.h */,
-				3FBE4C282222AB0200782647 /* dsa_pub.pem */,
 				3FE784E02053D455007F6200 /* README.md */,
 			);
 			path = Fluor;
@@ -356,7 +334,6 @@
 				3FCD169E1D79793600C57B22 /* Frameworks */,
 				3FCD169F1D79793600C57B22 /* Resources */,
 				3FD11B2F207A320800742415 /* Run Script */,
-				3FBE4C252222A25200782647 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,8 +342,8 @@
 			name = Fluor;
 			packageProductDependencies = (
 				3F16ECDC23E9D1AC008BC89A /* DefaultsWrapper */,
-				3F15629E23FEDD0000CD0773 /* CoreGeometry */,
 				3FE7B6DA245DF8450027DB39 /* SmoothOperators */,
+				3FE18A422870D389007E3EE4 /* CoreGeometry */,
 			);
 			productName = Fluor;
 			productReference = 3FCD16A11D79793600C57B22 /* Fluor.app */;
@@ -409,8 +386,8 @@
 			mainGroup = 3FCD16981D79793600C57B22;
 			packageReferences = (
 				3F16ECDB23E9D1AC008BC89A /* XCRemoteSwiftPackageReference "DefaultsWrapper" */,
-				3F15629D23FEDD0000CD0773 /* XCRemoteSwiftPackageReference "CoreGeometry" */,
 				3FE7B6D9245DF8450027DB39 /* XCRemoteSwiftPackageReference "SmoothOperators" */,
+				3FE18A412870D389007E3EE4 /* XCRemoteSwiftPackageReference "CoreGeometry" */,
 			);
 			productRefGroup = 3FCD16A21D79793600C57B22 /* Products */;
 			projectDirPath = "";
@@ -432,7 +409,6 @@
 				3F0A2A332014BA2D009F9610 /* RunningApps.storyboard in Resources */,
 				3F820C412219B63F00004813 /* Preferences.storyboard in Resources */,
 				3F883E76240050A600E2A7D7 /* Main.xib in Resources */,
-				3FBE4C292222AB0200782647 /* dsa_pub.pem in Resources */,
 				3F3433341E50C53A009F4D86 /* ReleaseNotes.rtf in Resources */,
 				3F6D52CA2069659800517E57 /* About.storyboard in Resources */,
 				3F4ABD0E201937B30075B178 /* RulesEditor.storyboard in Resources */,
@@ -507,9 +483,9 @@
 				3F2FA4051D7A1F87003E2AD8 /* AppManager.swift in Sources */,
 				3F6D52CE20696E2100517E57 /* PoppingLinkButton.swift in Sources */,
 				3FC44EFA1D7F169A0065D433 /* Enums.swift in Sources */,
-				C5F7E4ED47702803DFF3527D /* ApplicationIsRunningObserver.swift in Sources */,
-				C5F7E8D964D8CA264290B14E /* WindowFocusedObserver.swift in Sources */,
-				C5F7E0F3EDC3906CE083A6C9 /* ApplicationWindowFocusManager.swift in Sources */,
+				C5F7EEDE2DBDE701F9E9266C /* ApplicationWindowFocusManager.swift in Sources */,
+				C5F7EC5CD38F9BCBF01E2266 /* ApplicationIsRunningObserver.swift in Sources */,
+				C5F7EDB1AA6F2C5499891B32 /* WindowFocusedObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,7 +594,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -678,7 +654,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -706,24 +682,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Fluor/Fluor.entitlements;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MW87BTTVVK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fluor",
-					"$(PROJECT_DIR)/../Sparkle-2.2.2",
 				);
 				INFOPLIST_FILE = Fluor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 2.5.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 2.5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyrolyse.Fluor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -741,24 +716,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Fluor/Fluor.entitlements;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MW87BTTVVK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fluor",
-					"$(PROJECT_DIR)/../Sparkle-2.2.2",
 				);
 				INFOPLIST_FILE = Fluor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 2.5.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 2.5.1;
 				OTHER_SWIFT_FLAGS = "-DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyrolyse.Fluor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -795,20 +769,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3F15629D23FEDD0000CD0773 /* XCRemoteSwiftPackageReference "CoreGeometry" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitlab.com/Pyroh/CoreGeometry.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
 		3F16ECDB23E9D1AC008BC89A /* XCRemoteSwiftPackageReference "DefaultsWrapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Pyroh/DefaultsWrapper.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.1.0;
+			};
+		};
+		3FE18A412870D389007E3EE4 /* XCRemoteSwiftPackageReference "CoreGeometry" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Pyroh/CoreGeometry.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
 			};
 		};
 		3FE7B6D9245DF8450027DB39 /* XCRemoteSwiftPackageReference "SmoothOperators" */ = {
@@ -822,15 +796,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3F15629E23FEDD0000CD0773 /* CoreGeometry */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3F15629D23FEDD0000CD0773 /* XCRemoteSwiftPackageReference "CoreGeometry" */;
-			productName = CoreGeometry;
-		};
 		3F16ECDC23E9D1AC008BC89A /* DefaultsWrapper */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3F16ECDB23E9D1AC008BC89A /* XCRemoteSwiftPackageReference "DefaultsWrapper" */;
 			productName = DefaultsWrapper;
+		};
+		3FE18A422870D389007E3EE4 /* CoreGeometry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FE18A412870D389007E3EE4 /* XCRemoteSwiftPackageReference "CoreGeometry" */;
+			productName = CoreGeometry;
 		};
 		3FE7B6DA245DF8450027DB39 /* SmoothOperators */ = {
 			isa = XCSwiftPackageProductDependency;
