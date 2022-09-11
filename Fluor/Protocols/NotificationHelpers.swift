@@ -38,20 +38,39 @@ extension Notification.Name {
 }
 
 @objc protocol ActiveApplicationDidChangeObserver {
-    func activeApplicationDidChangw(notification: Notification)
+    func activeApplicationDidChange(app: NSRunningApplication)
+    func didActivateApplicationSelector(notification: Notification)
 }
 
+let iTerm2BundleId = "com.googlecode.iterm2"
+
 extension ActiveApplicationDidChangeObserver {
+
     func startObservingActiveApplicationDidChange() {
-        NSWorkspace.shared.notificationCenter.addObserver(self, selector: #selector(activeApplicationDidChangw(notification:)), name: NSWorkspace.didActivateApplicationNotification, object: nil)
+        NSWorkspace.shared.notificationCenter
+                .addObserver(
+                        self,
+                        selector: #selector(didActivateApplicationSelector(notification:)),
+                        name: NSWorkspace.didActivateApplicationNotification,
+                        object: nil)
+
+        ApplicationWindowFocusManager.shared.addObserver(bundleId: iTerm2BundleId) { focused, pid in
+            if (focused) {
+                self.activeApplicationDidChange(app: NSRunningApplication(processIdentifier: pid)!)
+            } else {
+                self.activeApplicationDidChange(app: NSWorkspace.shared.frontmostApplication!)
+            }
+        }
     }
-    
+
     func stopObservingActiveApplicationDidChange() {
         NSWorkspace.shared.notificationCenter.removeObserver(self, name: NSWorkspace.didActivateApplicationNotification, object: nil)
+        ApplicationWindowFocusManager.shared.removeObserver(bundleId: iTerm2BundleId)
     }
 }
 
 // MARK: -
+
 // MARK: BehaviorDidChange notfication
 @objc protocol BehaviorDidChangeObserver {
     func behaviorDidChangeForApp(notification: Notification)
@@ -61,6 +80,7 @@ extension BehaviorDidChangeObserver {
     func startObservingBehaviorDidChange() {
         NotificationCenter.default.addObserver(self, selector: #selector(behaviorDidChangeForApp(notification:)), name: .BehaviorDidChangeForApp, object: nil)
     }
+
     func stopObservingBehaviorDidChange() {
         NotificationCenter.default.removeObserver(self, name: .BehaviorDidChangeForApp, object: nil)
     }
@@ -72,12 +92,13 @@ protocol BehaviorDidChangePoster {
 
 extension BehaviorDidChangePoster {
     func postBehaviorDidChangeNotification(id: String, url: URL, behavior: AppBehavior, source: NotificationSource = .undefined) {
-        let userInfo = ["id": id, "url": url, "behavior": behavior, "source": source] as [String : Any]
+        let userInfo = ["id": id, "url": url, "behavior": behavior, "source": source] as [String: Any]
         NotificationCenter.default.post(name: .BehaviorDidChangeForApp, object: self, userInfo: userInfo)
     }
 }
 
 // MARK: -
+
 // MARK: SwitchMethodDidChange notification
 @objc protocol SwitchMethodDidChangeObserver {
     func switchMethodDidChange(notification: Notification)
@@ -87,6 +108,7 @@ extension SwitchMethodDidChangeObserver {
     func startObservingSwitchMethodDidChange() {
         NotificationCenter.default.addObserver(self, selector: #selector(switchMethodDidChange(notification:)), name: .SwitchMethodDidChange, object: nil)
     }
+
     func stopObservingSwitchMethodDidChange() {
         NotificationCenter.default.removeObserver(self, name: .SwitchMethodDidChange, object: nil)
     }
@@ -104,6 +126,7 @@ extension SwitchMethodDidChangePoster {
 }
 
 // MARK: -
+
 // MARK: TriggerSectionVisibilityDidChange notification
 @objc protocol TriggerSectionVisibilityDidChangeObserver {
     func triggerSectionVisibilityDidChange(notification: Notification)
@@ -113,6 +136,7 @@ extension TriggerSectionVisibilityDidChangeObserver {
     func startObservingTriggerSectionVisibilityDidChange() {
         NotificationCenter.default.addObserver(self, selector: #selector(triggerSectionVisibilityDidChange(notification:)), name: .TriggerSectionVisibilityDidChange, object: nil)
     }
+
     func stopObservingTriggerSectionVisibilityDidChange() {
         NotificationCenter.default.removeObserver(self, name: .TriggerSectionVisibilityDidChange, object: nil)
     }
@@ -130,6 +154,7 @@ extension TriggerSectionVisibilityDidChangePoster {
 }
 
 // MARK: -
+
 // MARK: Menu control notifications
 @objc protocol MenuControlObserver {
     func menuNeedsToOpen(notification: Notification)
@@ -142,6 +167,7 @@ extension MenuControlObserver {
         NotificationCenter.default.addObserver(self, selector: #selector(menuNeedsToClose(notification:)), name: .MenuNeedsToClose, object: nil)
 
     }
+
     func stopObservingSwitchMenuControlNotification() {
         NotificationCenter.default.removeObserver(self, name: .MenuNeedsToOpen, object: nil)
         NotificationCenter.default.removeObserver(self, name: .MenuNeedsToClose, object: nil)
@@ -157,7 +183,7 @@ extension MenuControlPoster {
     func postMenuNeedsToOpenNotification() {
         NotificationCenter.default.post(name: .MenuNeedsToOpen, object: self)
     }
-    
+
     func postMenuNeedsToCloseNotification(animated: Bool = true) {
         let userInfo = ["animated": animated]
         NotificationCenter.default.post(name: .MenuNeedsToClose, object: self, userInfo: userInfo)

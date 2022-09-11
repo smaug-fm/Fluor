@@ -66,6 +66,9 @@
 		3FF655CA20751D1600C8D2FC /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF655C820751D1600C8D2FC /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7194082E28CDBDFD00EEA71F /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBE4C202222A22200782647 /* Sparkle.framework */; };
 		7194082F28CDBE0D00EEA71F /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBE4C202222A22200782647 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5F7E0F3EDC3906CE083A6C9 /* ApplicationWindowFocusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7E5B44A817A1ABF03D2B8 /* ApplicationWindowFocusManager.swift */; };
+		C5F7E4ED47702803DFF3527D /* ApplicationIsRunningObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7EC9CABF307FF4BC26CF1 /* ApplicationIsRunningObserver.swift */; };
+		C5F7E8D964D8CA264290B14E /* WindowFocusedObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7EA38DABB33B7CFE02A6A /* WindowFocusedObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -156,6 +159,9 @@
 		3FF2410A1EDB4E0000E524CD /* SwitchMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchMethodViewController.swift; sourceTree = "<group>"; };
 		3FF655C820751D1600C8D2FC /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
 		3FF655C920751D1600C8D2FC /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
+		C5F7E5B44A817A1ABF03D2B8 /* ApplicationWindowFocusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationWindowFocusManager.swift; sourceTree = "<group>"; };
+		C5F7EA38DABB33B7CFE02A6A /* WindowFocusedObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowFocusedObserver.swift; sourceTree = "<group>"; };
+		C5F7EC9CABF307FF4BC26CF1 /* ApplicationIsRunningObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationIsRunningObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +267,9 @@
 			children = (
 				3F84FE80200E655E00871275 /* StoryboardInstantiableProtocol.swift */,
 				3FE213281D89A6940023FAC2 /* NotificationHelpers.swift */,
+				C5F7EC9CABF307FF4BC26CF1 /* ApplicationIsRunningObserver.swift */,
+				C5F7EA38DABB33B7CFE02A6A /* WindowFocusedObserver.swift */,
+				C5F7E5B44A817A1ABF03D2B8 /* ApplicationWindowFocusManager.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -498,6 +507,9 @@
 				3F2FA4051D7A1F87003E2AD8 /* AppManager.swift in Sources */,
 				3F6D52CE20696E2100517E57 /* PoppingLinkButton.swift in Sources */,
 				3FC44EFA1D7F169A0065D433 /* Enums.swift in Sources */,
+				C5F7E4ED47702803DFF3527D /* ApplicationIsRunningObserver.swift in Sources */,
+				C5F7E8D964D8CA264290B14E /* WindowFocusedObserver.swift in Sources */,
+				C5F7E0F3EDC3906CE083A6C9 /* ApplicationWindowFocusManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
