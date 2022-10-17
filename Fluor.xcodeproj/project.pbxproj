@@ -10,7 +10,6 @@
 		3F0A2A302014BA11009F9610 /* RunningAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A2A2F2014BA11009F9610 /* RunningAppsViewController.swift */; };
 		3F0A2A332014BA2D009F9610 /* RunningApps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0A2A312014BA2D009F9610 /* RunningApps.storyboard */; };
 		3F15629C23FE892A00CD0773 /* MoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15629B23FE892A00CD0773 /* MoverImageView.swift */; };
-		3F16ECDD23E9D1AC008BC89A /* DefaultsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 3F16ECDC23E9D1AC008BC89A /* DefaultsWrapper */; };
 		3F16ECDF23EC459F008BC89A /* ResultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16ECDE23EC459F008BC89A /* ResultExtension.swift */; };
 		3F16ECE123EDDF66008BC89A /* SetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16ECE023EDDF66008BC89A /* SetExtension.swift */; };
 		3F244071245D73180061960A /* UserNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F244070245D73180061960A /* UserNotificationHelper.swift */; };
@@ -48,7 +47,6 @@
 		3FCD16AA1D79793600C57B22 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD16A81D79793600C57B22 /* MainMenu.xib */; };
 		3FD0AFA623C62CD400DC9533 /* FKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0AFA523C62CD400DC9533 /* FKeyManager.swift */; };
 		3FD0AFA823C8759A00DC9533 /* AppErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0AFA723C8759A00DC9533 /* AppErrorManager.swift */; };
-		3FE18A432870D389007E3EE4 /* CoreGeometry in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE18A422870D389007E3EE4 /* CoreGeometry */; };
 		3FE213291D89A6940023FAC2 /* NotificationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE213281D89A6940023FAC2 /* NotificationHelpers.swift */; };
 		3FE2A5F51E5650ED0011E544 /* MenuItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE2A5F41E5650ED0011E544 /* MenuItemsController.swift */; };
 		3FE38EA8221D90930019B889 /* ReleaseNotesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE38EA7221D90930019B889 /* ReleaseNotesWindowController.swift */; };
@@ -57,15 +55,17 @@
 		3FE784DD2052F591007F6200 /* NSViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE784DC2052F591007F6200 /* NSViewExtension.swift */; };
 		3FE784E12053D455007F6200 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3FE784E02053D455007F6200 /* README.md */; };
 		3FE7B6C9245DC6180027DB39 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FE7B6CB245DC6180027DB39 /* Localizable.strings */; };
-		3FE7B6DB245DF8450027DB39 /* SmoothOperators in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE7B6DA245DF8450027DB39 /* SmoothOperators */; };
 		3FE7E0E01D7CA14600DC754D /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE7E0DF1D7CA14600DC754D /* LaunchAtLoginController.m */; };
 		3FE7E0E31D7CBE1700DC754D /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE7E0E11D7CBE1700DC754D /* AboutWindowController.swift */; };
 		3FE7E0EA1D7CC01B00DC754D /* RulesEditorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE7E0E81D7CC01B00DC754D /* RulesEditorWindowController.swift */; };
 		3FF2410B1EDB4E0000E524CD /* SwitchMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2410A1EDB4E0000E524CD /* SwitchMethodViewController.swift */; };
 		3FF655CA20751D1600C8D2FC /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF655C820751D1600C8D2FC /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C5F7EC5CD38F9BCBF01E2266 /* ApplicationIsRunningObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7EF491F22BA94BBD1BA76 /* ApplicationIsRunningObserver.swift */; };
-		C5F7EDB1AA6F2C5499891B32 /* WindowFocusedObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7ECC8E2B3E4DFEACCD854 /* WindowFocusedObserver.swift */; };
-		C5F7EEDE2DBDE701F9E9266C /* ApplicationWindowFocusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7ED2502D7A1D8C3643560 /* ApplicationWindowFocusManager.swift */; };
+		C5F7EDB1AA6F2C5499891B32 /* ApplicationWindowGotFocusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7ECC8E2B3E4DFEACCD854 /* ApplicationWindowGotFocusObserver.swift */; };
+		C5F7EEDE2DBDE701F9E9266C /* ItermFocusedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7ED2502D7A1D8C3643560 /* ItermFocusedManager.swift */; };
+		CEDE589628FDAA3B00A1852E /* DefaultsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = CEDE589528FDAA3B00A1852E /* DefaultsWrapper */; };
+		CEDE589928FDAA5800A1852E /* CoreGeometry in Frameworks */ = {isa = PBXBuildFile; productRef = CEDE589828FDAA5800A1852E /* CoreGeometry */; };
+		CEDE589C28FDAA6D00A1852E /* SmoothOperators in Frameworks */ = {isa = PBXBuildFile; productRef = CEDE589B28FDAA6D00A1852E /* SmoothOperators */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,8 +140,8 @@
 		3FF2410A1EDB4E0000E524CD /* SwitchMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchMethodViewController.swift; sourceTree = "<group>"; };
 		3FF655C820751D1600C8D2FC /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
 		3FF655C920751D1600C8D2FC /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
-		C5F7ECC8E2B3E4DFEACCD854 /* WindowFocusedObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowFocusedObserver.swift; sourceTree = "<group>"; };
-		C5F7ED2502D7A1D8C3643560 /* ApplicationWindowFocusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationWindowFocusManager.swift; sourceTree = "<group>"; };
+		C5F7ECC8E2B3E4DFEACCD854 /* ApplicationWindowGotFocusObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationWindowGotFocusObserver.swift; sourceTree = "<group>"; };
+		C5F7ED2502D7A1D8C3643560 /* ItermFocusedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItermFocusedManager.swift; sourceTree = "<group>"; };
 		C5F7EF491F22BA94BBD1BA76 /* ApplicationIsRunningObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationIsRunningObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,9 +150,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FE7B6DB245DF8450027DB39 /* SmoothOperators in Frameworks */,
-				3FE18A432870D389007E3EE4 /* CoreGeometry in Frameworks */,
-				3F16ECDD23E9D1AC008BC89A /* DefaultsWrapper in Frameworks */,
+				CEDE589628FDAA3B00A1852E /* DefaultsWrapper in Frameworks */,
+				CEDE589928FDAA5800A1852E /* CoreGeometry in Frameworks */,
+				CEDE589C28FDAA6D00A1852E /* SmoothOperators in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,9 +247,9 @@
 			children = (
 				3F84FE80200E655E00871275 /* StoryboardInstantiableProtocol.swift */,
 				3FE213281D89A6940023FAC2 /* NotificationHelpers.swift */,
-				C5F7ED2502D7A1D8C3643560 /* ApplicationWindowFocusManager.swift */,
+				C5F7ED2502D7A1D8C3643560 /* ItermFocusedManager.swift */,
 				C5F7EF491F22BA94BBD1BA76 /* ApplicationIsRunningObserver.swift */,
-				C5F7ECC8E2B3E4DFEACCD854 /* WindowFocusedObserver.swift */,
+				C5F7ECC8E2B3E4DFEACCD854 /* ApplicationWindowGotFocusObserver.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -341,9 +341,9 @@
 			);
 			name = Fluor;
 			packageProductDependencies = (
-				3F16ECDC23E9D1AC008BC89A /* DefaultsWrapper */,
-				3FE7B6DA245DF8450027DB39 /* SmoothOperators */,
-				3FE18A422870D389007E3EE4 /* CoreGeometry */,
+				CEDE589528FDAA3B00A1852E /* DefaultsWrapper */,
+				CEDE589828FDAA5800A1852E /* CoreGeometry */,
+				CEDE589B28FDAA6D00A1852E /* SmoothOperators */,
 			);
 			productName = Fluor;
 			productReference = 3FCD16A11D79793600C57B22 /* Fluor.app */;
@@ -356,7 +356,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = Pyrolyse;
 				TargetAttributes = {
 					3FCD16A01D79793600C57B22 = {
@@ -385,9 +385,9 @@
 			);
 			mainGroup = 3FCD16981D79793600C57B22;
 			packageReferences = (
-				3F16ECDB23E9D1AC008BC89A /* XCRemoteSwiftPackageReference "DefaultsWrapper" */,
-				3FE7B6D9245DF8450027DB39 /* XCRemoteSwiftPackageReference "SmoothOperators" */,
-				3FE18A412870D389007E3EE4 /* XCRemoteSwiftPackageReference "CoreGeometry" */,
+				CEDE589428FDAA3B00A1852E /* XCRemoteSwiftPackageReference "DefaultsWrapper" */,
+				CEDE589728FDAA5800A1852E /* XCRemoteSwiftPackageReference "CoreGeometry" */,
+				CEDE589A28FDAA6D00A1852E /* XCRemoteSwiftPackageReference "SmoothOperators" */,
 			);
 			productRefGroup = 3FCD16A21D79793600C57B22 /* Products */;
 			projectDirPath = "";
@@ -483,9 +483,9 @@
 				3F2FA4051D7A1F87003E2AD8 /* AppManager.swift in Sources */,
 				3F6D52CE20696E2100517E57 /* PoppingLinkButton.swift in Sources */,
 				3FC44EFA1D7F169A0065D433 /* Enums.swift in Sources */,
-				C5F7EEDE2DBDE701F9E9266C /* ApplicationWindowFocusManager.swift in Sources */,
+				C5F7EEDE2DBDE701F9E9266C /* ItermFocusedManager.swift in Sources */,
 				C5F7EC5CD38F9BCBF01E2266 /* ApplicationIsRunningObserver.swift in Sources */,
-				C5F7EDB1AA6F2C5499891B32 /* WindowFocusedObserver.swift in Sources */,
+				C5F7EDB1AA6F2C5499891B32 /* ApplicationWindowGotFocusObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +588,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -648,6 +649,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -769,46 +771,46 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3F16ECDB23E9D1AC008BC89A /* XCRemoteSwiftPackageReference "DefaultsWrapper" */ = {
+		CEDE589428FDAA3B00A1852E /* XCRemoteSwiftPackageReference "DefaultsWrapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Pyroh/DefaultsWrapper.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
+				kind = exactVersion;
+				version = 1.3.0;
 			};
 		};
-		3FE18A412870D389007E3EE4 /* XCRemoteSwiftPackageReference "CoreGeometry" */ = {
+		CEDE589728FDAA5800A1852E /* XCRemoteSwiftPackageReference "CoreGeometry" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Pyroh/CoreGeometry.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
+				kind = exactVersion;
+				version = 6.0.2;
 			};
 		};
-		3FE7B6D9245DF8450027DB39 /* XCRemoteSwiftPackageReference "SmoothOperators" */ = {
+		CEDE589A28FDAA6D00A1852E /* XCRemoteSwiftPackageReference "SmoothOperators" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Pyroh/SmoothOperators.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.0;
+				kind = exactVersion;
+				version = 0.18.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3F16ECDC23E9D1AC008BC89A /* DefaultsWrapper */ = {
+		CEDE589528FDAA3B00A1852E /* DefaultsWrapper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3F16ECDB23E9D1AC008BC89A /* XCRemoteSwiftPackageReference "DefaultsWrapper" */;
+			package = CEDE589428FDAA3B00A1852E /* XCRemoteSwiftPackageReference "DefaultsWrapper" */;
 			productName = DefaultsWrapper;
 		};
-		3FE18A422870D389007E3EE4 /* CoreGeometry */ = {
+		CEDE589828FDAA5800A1852E /* CoreGeometry */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3FE18A412870D389007E3EE4 /* XCRemoteSwiftPackageReference "CoreGeometry" */;
+			package = CEDE589728FDAA5800A1852E /* XCRemoteSwiftPackageReference "CoreGeometry" */;
 			productName = CoreGeometry;
 		};
-		3FE7B6DA245DF8450027DB39 /* SmoothOperators */ = {
+		CEDE589B28FDAA6D00A1852E /* SmoothOperators */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3FE7B6D9245DF8450027DB39 /* XCRemoteSwiftPackageReference "SmoothOperators" */;
+			package = CEDE589A28FDAA6D00A1852E /* XCRemoteSwiftPackageReference "SmoothOperators" */;
 			productName = SmoothOperators;
 		};
 /* End XCSwiftPackageProductDependency section */

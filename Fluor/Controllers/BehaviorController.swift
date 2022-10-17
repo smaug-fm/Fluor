@@ -40,6 +40,8 @@ class BehaviorController: NSObject, BehaviorDidChangeObserver, DefaultModeViewCo
     private var fnDownTimestamp: TimeInterval? = nil
     private var shouldHandleFNKey: Bool = false
 
+    private var activeAppWindowGotFocusObserver: ApplicationWindowGotFocusObserver?
+
     private var currentMode: FKeyMode = .media
     private var onLaunchKeyboardMode: FKeyMode = .media
     private var currentAppID: String = ""
@@ -47,8 +49,6 @@ class BehaviorController: NSObject, BehaviorDidChangeObserver, DefaultModeViewCo
     private var currentAppName: String?
     private var currentBehavior: AppBehavior = .inferred
     private var switchMethod: SwitchMethod = .window
-    private var applicationIsRunningObserver: ApplicationIsRunningObserver?
-    private var windowFocusedObserver: WindowFocusedObserver?
 
     func setupController() {
         self.onLaunchKeyboardMode = AppManager.default.getCurrentFKeyMode()
@@ -110,11 +110,15 @@ class BehaviorController: NSObject, BehaviorDidChangeObserver, DefaultModeViewCo
         }
     }
 
+    private func getIdFromNsRunningApplication(app: NSRunningApplication) -> String?{
+        return app.bundleIdentifier ?? app.executableURL?.lastPathComponent
+    }
+
     // MARK: - ActiveApplicationDidChangeObserver
 
     func activeApplicationDidChange(app: NSRunningApplication) {
         self.adaptToAccessibilityTrust()
-        guard let id = app.bundleIdentifier ?? app.executableURL?.lastPathComponent else {
+        guard let id = getIdFromNsRunningApplication(app: app) else {
             return
         }
         self.currentAppName = app.localizedName
@@ -130,6 +134,17 @@ class BehaviorController: NSObject, BehaviorDidChangeObserver, DefaultModeViewCo
     func didActivateApplicationSelector(notification: Notification) {
         guard let app = notification.userInfo?[NSWorkspace.applicationUserInfoKey] as? NSRunningApplication else {
             return
+        }
+        if (activeAppWindowGotFocusObserver != nil) {
+            activeAppWindowGotFocusObserver = nil
+        }
+        activeAppWindowGotFocusObserver = ApplicationWindowGotFocusObserver(app: app) {
+            if let observer = self.activeAppWindowGotFocusObserver {
+                let activeWindowAppId = self.getIdFromNsRunningApplication(app: observer.app)
+                if (self.currentAppID != activeWindowAppId) {
+                    self.activeApplicationDidChange(app: observer.app)
+                }
+            }
         }
         self.activeApplicationDidChange(app: app)
     }

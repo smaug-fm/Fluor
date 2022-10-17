@@ -1,32 +1,34 @@
 {
-  "pins" : [
-    {
-      "identity" : "coregeometry",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Pyroh/CoreGeometry.git",
-      "state" : {
-        "revision" : "81c1bdb3d4cd05a79c90c554843eb349db49075b",
-        "version" : "6.0.2"
+  "object": {
+    "pins": [
+      {
+        "package": "CoreGeometry",
+        "repositoryURL": "https://github.com/Pyroh/CoreGeometry.git",
+        "state": {
+          "branch": null,
+          "revision": "81c1bdb3d4cd05a79c90c554843eb349db49075b",
+          "version": "6.0.2"
+        }
+      },
+      {
+        "package": "DefaultsWrapper",
+        "repositoryURL": "https://github.com/Pyroh/DefaultsWrapper.git",
+        "state": {
+          "branch": null,
+          "revision": "ba13b973c1bec40ba1a3db5e05eaa4e2d07f124f",
+          "version": "1.3.0"
+        }
+      },
+      {
+        "package": "SmoothOperators",
+        "repositoryURL": "https://github.com/Pyroh/SmoothOperators.git",
+        "state": {
+          "branch": null,
+          "revision": "cd9392d7b3466bd30148bec594a2c56ecb7b7c2d",
+          "version": "0.18.0"
+        }
       }
-    },
-    {
-      "identity" : "defaultswrapper",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Pyroh/DefaultsWrapper.git",
-      "state" : {
-        "revision" : "ba13b973c1bec40ba1a3db5e05eaa4e2d07f124f",
-        "version" : "1.3.0"
-      }
-    },
-    {
-      "identity" : "smoothoperators",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Pyroh/SmoothOperators.git",
-      "state" : {
-        "revision" : "cd9392d7b3466bd30148bec594a2c56ecb7b7c2d",
-        "version" : "0.18.0"
-      }
-    }
-  ],
-  "version" : 2
+    ]
+  },
+  "version": 1
 }

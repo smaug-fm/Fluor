@@ -3,36 +3,28 @@ import Foundation
 
 final class ApplicationIsRunningObserver {
     private var isRunning: Bool = false
-    private var bundleId: String
-    private var pid: pid_t? = nil
+    private var app: NSRunningApplication? = nil
     private var timer: Timer?
 
-    init(bundleId: String, callback: @escaping (Bool, pid_t?) -> Void) {
-        self.bundleId = bundleId;
-        listenForApplicationRunningState(callback: callback)
-    }
-
-    private func listenForApplicationRunningState(callback: @escaping (Bool, pid_t?) -> Void) {
-        Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { timer in
+    init(bundleId: String, callback: @escaping (Bool, NSRunningApplication?) -> Void) {
+        timer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { timer in
             let running = NSWorkspace.shared.runningApplications.contains { app in
-                if (app.bundleIdentifier == self.bundleId) {
-                    self.pid = app.processIdentifier
+                if (app.bundleIdentifier == bundleId) {
+                    self.app = app
                     return true
                 } else {
-                    self.pid = nil
+                    self.app = nil
                     return false
                 }
             }
             if (self.isRunning != running) {
-                callback(running, self.pid)
+                callback(running, self.app)
                 self.isRunning = running
             }
         }
     }
 
     deinit {
-        if (timer != nil) {
-            timer?.invalidate()
-        }
+        timer?.invalidate()
     }
 }

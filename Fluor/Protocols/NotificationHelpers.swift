@@ -42,11 +42,10 @@ extension Notification.Name {
     func didActivateApplicationSelector(notification: Notification)
 }
 
-let iTerm2BundleId = "com.googlecode.iterm2"
-
 extension ActiveApplicationDidChangeObserver {
 
     func startObservingActiveApplicationDidChange() {
+
         NSWorkspace.shared.notificationCenter
                 .addObserver(
                         self,
@@ -54,18 +53,14 @@ extension ActiveApplicationDidChangeObserver {
                         name: NSWorkspace.didActivateApplicationNotification,
                         object: nil)
 
-        ApplicationWindowFocusManager.shared.addObserver(bundleId: iTerm2BundleId) { focused, pid in
-            if (focused) {
-                self.activeApplicationDidChange(app: NSRunningApplication(processIdentifier: pid)!)
-            } else {
-                self.activeApplicationDidChange(app: NSWorkspace.shared.frontmostApplication!)
-            }
+        ItermFocusedManager.shared.addObserver() { app in
+            self.activeApplicationDidChange(app: app)
         }
     }
 
     func stopObservingActiveApplicationDidChange() {
         NSWorkspace.shared.notificationCenter.removeObserver(self, name: NSWorkspace.didActivateApplicationNotification, object: nil)
-        ApplicationWindowFocusManager.shared.removeObserver(bundleId: iTerm2BundleId)
+        ItermFocusedManager.shared.removeAllObservers()
     }
 }
 
